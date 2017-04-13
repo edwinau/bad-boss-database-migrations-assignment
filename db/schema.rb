@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170413183339) do
+ActiveRecord::Schema.define(version: 20170413184744) do
+
+  create_table "PartyGuests", force: :cascade do |t|
+    t.string  "first_name"
+    t.string  "last_name"
+    t.string  "diet_restrict"
+    t.integer "salary"
+    t.integer "kids_num"
+    t.string  "vulnerablities"
+    t.string  "illnesses"
+    t.string  "medication"
+    t.string  "voting_pref"
+  end
 
   create_table "parts", force: :cascade do |t|
     t.string  "name"
